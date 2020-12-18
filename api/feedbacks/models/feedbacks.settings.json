@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "courses",
+  "collectionName": "feedbacks",
   "info": {
-    "name": "courses",
-    "description": ""
+    "name": "feedbacks"
   },
   "options": {
     "increments": true,
@@ -11,26 +10,23 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "image": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images"
+        "files",
+        "images",
+        "videos"
       ],
       "plugin": "upload",
       "required": true
     },
-    "name": {
-      "type": "string",
-      "unique": true,
-      "required": true
-    },
-    "description": {
+    "words": {
       "type": "richtext",
-      "required": true
-    },
-    "price": {
-      "type": "biginteger",
       "required": true
     }
   }
