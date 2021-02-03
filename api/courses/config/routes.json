@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/courses",
+      "path": "/strapi/v1/courses",
       "handler": "courses.find",
       "config": {
         "policies": []

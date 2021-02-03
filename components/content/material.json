@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_content_materials",
+  "info": {
+    "name": "material",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

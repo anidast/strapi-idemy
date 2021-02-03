@@ -32,6 +32,17 @@
     "price": {
       "type": "biginteger",
       "required": true
+    },
+    "material": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.material"
+    },
+    "detail": {
+      "type": "dynamiczone",
+      "components": [
+        "content.teacher"
+      ]
     }
   }
 }

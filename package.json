@@ -12,14 +12,19 @@
   "devDependencies": {},
   "dependencies": {
     "knex": "<0.20.0",
-    "strapi": "3.3.4",
+    "sharp": "^0.27.1",
+    "sqlite3": "^5.0.0",
+    "strapi": "^3.3.4",
     "strapi-admin": "3.3.4",
     "strapi-connector-bookshelf": "3.3.4",
     "strapi-plugin-content-manager": "3.3.4",
     "strapi-plugin-content-type-builder": "3.3.4",
+    "strapi-plugin-documentation": "^3.3.4",
     "strapi-plugin-email": "3.3.4",
     "strapi-plugin-upload": "3.3.4",
     "strapi-plugin-users-permissions": "3.3.4",
+    "strapi-provider-upload-tp-minio": "^3.0.0",
+    "strapi-upload-minio-unofficial": "^1.0.1",
     "strapi-utils": "3.3.4"
   },
   "author": {
