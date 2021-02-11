@@ -43,6 +43,10 @@
       "components": [
         "content.teacher"
       ]
+    },
+    "slug": {
+      "type": "string",
+      "unique": true
     }
   }
 }
