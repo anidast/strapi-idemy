@@ -38,15 +38,17 @@
       "repeatable": true,
       "component": "content.material"
     },
-    "detail": {
-      "type": "dynamiczone",
-      "components": [
-        "content.teacher"
-      ]
-    },
     "slug": {
       "type": "string",
       "unique": true
+    },
+    "teacher": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "courses"
+    },
+    "publish_at": {
+      "type": "datetime"
     }
   }
 }
