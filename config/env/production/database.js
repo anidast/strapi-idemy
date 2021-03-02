@@ -1,26 +1,14 @@
-const { parse } = require("pg-connection-string");
-
-module.exports = ({ env }) => {
-  const { host, port, database, user, password } = parse(env("DATABASE_URL"));
-
-  return {
-    defaultConnection: "default",
+module.exports = ({ env }) => ({
+    defaultConnection: 'default',
     connections: {
       default: {
-        connector: "bookshelf",
+        connector: 'mongoose',
         settings: {
-          client: "sqlite",
-          host,
-          port,
-          database,
-          username: user,
-          password,
-          ssl: { rejectUnauthorized: false }
+          uri: env('DATABASE_URI'),
         },
         options: {
-          ssl: false
+          ssl: true,
         },
       },
     },
-  };
-};
+  });
