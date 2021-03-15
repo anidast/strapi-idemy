@@ -30,6 +30,7 @@
     "strapi-plugin-graphql": "^3.3.4",
     "strapi-plugin-upload": "3.3.4",
     "strapi-plugin-users-permissions": "3.3.4",
+    "strapi-plugin-wysiwyg-toastui": "^0.1.5",
     "strapi-provider-upload-tp-minio": "^3.0.0",
     "strapi-upload-minio-unofficial": "^1.0.1",
     "strapi-utils": "3.3.4"
